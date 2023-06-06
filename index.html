@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Vanya Hill Resort</title>
+    <link rel="shortcut icon" href="assets/img/Fav Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="css-123">
+            <div class="head-css">
+                <a href="index.html">
+                    <img src="assets/img/VANYA LOGO PNG.png" alt="Logo" width="170px" height="60px">
+                </a>
+                <div class="css-122">
+                    <a href="../pages/signUp.html" target="_blank" class="s-button">Sign in or Join</a>
+                </div>
+            </div>
+        </div>
+        <div class="b-t">
+            <div class="css-123">
+                <div class="css-124">
+                    <nav>
+                        <ul class="css-223">
+                            <li class="css-list"><a href="#" class="list-a">Home</a></li>
+                            <li class="css-list"><a href="#" class="list-a">Services</a></li>
+                            <li class="css-list"><a href="#" class="list-a">Packages</a></li>
+                            <li class="css-list"><a href="#" class="list-a">blog</a></li>
+                            <li class="css-list"><a href="#" class="list-a">About</a></li>
+                            <li class="css-list"><a href="#" class="list-a">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="b-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <script>
+        var className = "globalStickyHeader";
+        var scrollTrigger = 80;
+
+        window.onscroll = function () {
+            // We add pageYOffset for compatibility with IE.
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByClassName("sec")[0].classList.add(className);
+            } else {
+                document.getElementsByClassName("sec")[0].classList.remove(className);
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Nunito+Sans:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
+}
+/* ==================Header part======================= */
+header{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.css-123{
+    display: block;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0px 170px;
+}
+.head-css{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+.css-122{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-button{
+    padding: 0.7rem 1rem;
+    color: #090909;
+    text-decoration: none;
+    border: 1px solid black;
+}
+.css-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 264px;
+    background-image: url("../img/sign-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.css-234{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 180px;
+}
+.icon-text{
+    text-align: center;
+}
+.icon-s{
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #0c602b;
+}
+.main-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto !important ;
+}
+.css-form{
+    width: 60%;
+    padding: 0px 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0.0625rem solid #b3b3b3;
+    border-radius: 0.25rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.css-455{
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 10px;
+}
+.css-450{
+    display: flex;
+    gap: 10px;
+}
+.css-bold{
+    font-weight: 500;
+}
+.css-main-form{
+    margin-top: 15px;
+}
+form{
+    padding: 0px 10px;
+}
+.css-400{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.input-css, .input-css-1{
+    padding: 0.9rem 3rem 0.9rem 1.25rem;
+    width: 100%;
+    border: 0.0625rem solid #b3b3b3;
+    border-radius: 0.25rem;
+    outline: none;
+}
+.css-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.css-401{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.css-2{
+    margin-bottom: 15px;
+}
+.css-32{
+    margin-bottom: 15px !important;
+}
+.css-check{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+    font-weight: 500;
+}
+.input-check{
+    margin-left: 10px;
+}
+.b-button{
+    padding: 1rem 2.5rem;
+    color: #f9f9f9;
+    font-size: 16px;
+    background-color: #090909;
+    border: 1px solid black;   
+    margin: 0.5rem 0 ;
+    transition: .2s ease-out;
+    margin-bottom: 20px;
+}
+.b-button:hover{
+    background-color: #131212;
+    transform: scale(1.062);
+}
