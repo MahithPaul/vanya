@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Nunito+Sans:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0c602b;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 20px;
+  }
+  /* ===========================Sign-Up PAGE LAYOUT=============================== */
+  @media screen and (max-width: 450px) {
+    .css-123{
+        margin: 0px;
+    }
+    .css-234{
+        margin: 10px 15px;
+    }
+    .icon-s {
+        font-size: 35px;
+    }
+    .icon-text h3{
+        font-size: 12px;
+    }
+    .css-20{
+        flex-direction: column;
+        margin: 30px 10px;
+    }
+    .css-20 img{
+        width: 335px;
+        height: 280px;
+    }
+    .css-21{
+        padding: 0px 10px;
+    }
+    .foot-css{
+        flex-direction: column;
+        align-items: center;
+    }
+    .css-logo{
+        width: 45%;
+    }
+    .css-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .css-350{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .css-352{
+        width:80%;
+    }
+    .css-349{
+        font-size: 1.5rem;
+    }
+    .css-form {
+        width: 95%;
+    }
+    .css-450 {
+        text-align: center;
+        display: block;
+        gap: 0px;
+    }
+  }
