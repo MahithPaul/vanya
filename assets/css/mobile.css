@@ -45,6 +45,9 @@
     .css-21{
         padding: 0px 10px;
     }
+    .input-css{
+        padding: 0.9rem 2rem 0.9rem 1.25rem;
+    }
     .foot-css{
         flex-direction: column;
         align-items: center;
