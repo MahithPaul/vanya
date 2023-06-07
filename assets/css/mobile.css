@@ -39,7 +39,7 @@
         margin: 30px 10px;
     }
     .css-20 img{
-        width: 345px;
+        width: 347px;
         height: 280px;
     }
     .css-21{
@@ -50,11 +50,21 @@
         align-items: center;
     }
     .css-logo{
-        width: 45%;
+        width: 47%;
     }
     .css-footer{
-        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 25px !important;
         align-items: center;
+    }
+    .css-footer-1{
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0px !important;
+        margin-top: 0px;
     }
     .css-350{
         width: 80%;
@@ -62,9 +72,6 @@
     }
     .css-352{
         width:80%;
-    }
-    .css-349{
-        font-size: 1.5rem;
     }
     .css-form {
         width: 95%;
