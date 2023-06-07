@@ -43,6 +43,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .css-234{
     display: flex;
     justify-content: space-between;
@@ -62,16 +63,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     margin: 0px auto !important ;
+    background-color: #f3eee7;
 }
 .css-form{
     width: 60%;
     padding: 0px 1rem;
     margin-top: 10px;
-    margin-bottom: 20px;
-    border: 0.0625rem solid #b3b3b3;
+    margin-bottom: 50px;
+    background-color: #fff;
+    /* border: 0.0625rem solid #b3b3b3; */
     border-radius: 0.25rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .css-455{
     width: 100%;
@@ -147,5 +151,107 @@ label{
 }
 .b-button:hover{
     background-color: #131212;
-    transform: scale(1.062);
+    cursor: pointer;
+}   
+.css-20{
+    display: flex;
+    justify-content: center;
+    margin: 50px 60px;
+    gap: 20px;
+}
+.css-21{
+    padding: 0px 20px 0px 20px;
+}
+.h-css{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+.text-css{
+    margin-bottom: 30px;
+}
+.services-t{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    border-top: 0.0625rem solid #b3b3b3;
+}
+/* ==============================Footer============================== */
+footer{
+    background-color: #131212;
+}
+.foot-css{
+    margin: 0px auto;
+    background-color: #131212;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    border-bottom: 0.0625rem solid #b3b3b3;
+}
+.css-logo{
+    margin-top: 30px;
+    width: 20%;
+}
+.css-footer{
+    width: 60%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.css-143{
+    color: #f9f9f9;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.css-350{
+    width: 40%;
+}
+.css-352{
+    width: 50%;
+}
+.css-209{
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    transition: .3s ease-out;
+}
+.css-211:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.css-210{
+    margin-bottom: 15px;
+}
+.css-211{
+ color: #b3b3b3;
+ text-decoration: none;
+}
+.link-css{
+    margin-top: 20px;
+}
+.css-349{
+    padding: 10px 15px 10px 0px;
+    font-size: 2rem;
+    color: #b3b3b3;
+}
+.f:hover{
+    color: #1f62f1;
+}
+.i:hover{
+    color: #f11f77;
+}
+.l:hover{
+    color: #1f93f1;
+}
+.y:hover{
+    color: #f11f2a;
+}
+.css-789{
+    padding: 20px 0px;
+    background-color: #131212;
+}
+.css-09{
+    text-align: center;
+    color: #f3eee7;
 }
