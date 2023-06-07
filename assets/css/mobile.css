@@ -82,3 +82,9 @@
         gap: 0px;
     }
   }
+/* ===========================Sign-In PAGE LAYOUT=============================== */
+@media screen and (max-width: 450px) {
+    .css-f{
+        width: 80%;
+    }
+}
