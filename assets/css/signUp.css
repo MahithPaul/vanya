@@ -66,6 +66,18 @@ header{
     justify-content: center;
     align-items: center;
 }
+.close{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    top: -2px;
+    right: 1px;
+    margin-left: 5px;
+}
+.close:hover{
+    cursor: pointer;
+}
 #successMessage{
     width: 100%;
     background-color: #60dd8e71;

@@ -1,6 +1,5 @@
 document.getElementById("signupForm").addEventListener("submit", function(event) {
   event.preventDefault();
-  
   var firstName = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
   var email = document.getElementById("email").value;
@@ -10,7 +9,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
   var termsAgreement = document.getElementById("termsAgreement").checked;
 
   var errorMessages = [];
-
+  
   // Validate email
   if (validateEmail(email)) {
     errorMessages.push("<li>Please enter a valid email address.</li>");

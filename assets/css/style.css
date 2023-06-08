@@ -46,7 +46,7 @@ header{
     align-items: center;
 }
 .b-t{
-    background-color: #0c602b;
+    background-color: rgba(12, 96, 43, 0.596);
     border-top: 1.5px solid #949494;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
