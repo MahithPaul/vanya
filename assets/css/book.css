@@ -1,0 +1,367 @@
+
+/* ==================Header part======================= */
+header{
+    width: 100%;
+    background-color: #0c602b !important;
+    color: #fff;
+    z-index: 9;
+}
+.globalStickyHeader{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+.css-123{
+    display: block;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0px 170px;
+}
+.head-css{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+.css-122{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-button{
+    padding: 0.7rem 1rem;
+    color: #ffff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+.css-124{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-t{
+    background-color: rgba(12, 96, 43, 0.774);
+    border-top: 1.5px solid #949494;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.css-223{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+.css-list{
+    padding: 1rem 0 !important;
+    text-transform: uppercase;
+}
+.css-list:hover{
+    border-bottom: 0.2125rem solid #fff;
+}
+.list-a{
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: .1rem 0 !important;
+}
+.b-button{
+    padding: 0.7rem 1.9rem;
+    color: #f9f9f9;
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #000;   
+    margin: 0.5rem 0 ;
+    transition: .2s ease-out;
+}
+.b-button:hover{
+    background-color: #000;
+    transform: scale(1.062);
+}
+/* ====================END HEAD=========================== */
+.css-book{
+    height: 404px;
+    background-image: url("../img/book.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.css-book-main{
+        width: 100%;
+        height: 62vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        margin: 0px auto !important ;
+        background-color: #ecf3fa; 
+}
+.css-book-form{
+    transform: translateY(-105px);
+    width: 65%;
+    padding: 0px 1rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #f3eee7;
+    /* border: 0.0625rem solid #b3b3b3; */
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.css-book-title{
+    margin: 10px 0px;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.css-booking{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.css-booking-d-main{
+    width: 100%;
+    padding: 0px 20px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+form{
+    margin: 5px 0px;
+}
+.css-price{
+    font-size: 2.5rem;
+}
+.css-nights{
+    width: 90%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.quantity-control {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quantity-control span,
+.quantity-control input{
+    background-color: #ffff;
+    font-size: 1.3rem;
+    padding: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.quantity-control input{
+    border: none;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    outline: none;
+}
+.quantity-control span{
+    user-select: none;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+.quantity-control span:first-child{
+    border-radius: 25px 0 0 25px;
+}
+.quantity-control span:last-child{
+    border-radius: 0 25px 25px 0;
+}
+.quantity-control span:hover{
+    color: #fff;
+    background-color: #0c602b;
+} 
+.css-987{
+    margin-bottom: 25px;
+}
+.css-input-123{
+    width: 42%;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/* Custom styling for datepicker */
+.ui-datepicker {
+    background-color: #ffff;
+    font-size: 14px;
+    border: 1px solid silver;
+  }
+  .ui-datepicker-header {
+    border: none;
+    padding: 10px 70px;
+    text-align: center;
+  }
+  .ui-datepicker-title {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    border: none;
+    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  .ui-datepicker-prev:hover,
+  .ui-datepicker-next:hover {
+    background-color: #0c602b;
+    color: #ecf3fa;
+  }
+  .ui-datepicker-calendar {
+    border-top: 1px solid silver;
+    background-color: #fff;
+    padding: 10px 25px;
+    
+  }
+  .ui-datepicker-calendar td {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .ui-datepicker-calendar .ui-state-default {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    padding: 2px;
+    border-radius:22px ;
+  }
+  .ui-datepicker-calendar .ui-state-default:hover{
+    background-color: #949494;
+    color: #fff;
+  }
+  .ui-datepicker-calendar .ui-state-highlight {
+    background-color: #ffd700;
+  }
+  .ui-datepicker-calendar .ui-state-active {
+    background-color: #007bff;
+    color: #fff;
+  }
+   .ui-state-disabled .ui-state-default{
+    color: #d6d5d5;
+  }
+.css-night-count{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.css-night-counts{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #f33131;
+}
+#numNights{
+    padding: 0px 10px;
+}
+.css-322{
+    width: 100%;
+    display: block;
+    padding: 0.7rem 1.9rem;
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #000;   
+    margin: 1rem 0 ;
+    cursor: pointer;
+}
+.css-322:hover{
+    background-color: #000;
+    transform: scale(1.022);
+}
+/* ==============================Footer============================== */
+footer{
+    background-color: #131212;
+}
+.foot-css{
+    margin: 0px auto;
+    background-color: #131212;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    border-bottom: 0.0625rem dotted #b3b3b3;
+}
+.css-logo{
+    margin-top: 30px;
+    width: 20%;
+}
+.css-footer{
+    width: 28%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.css-footer-1{
+    width: 30%;
+    margin-left: 50px !important;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.css-143{
+    color: #f9f9f9;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.css-350{
+    width: 40%;
+}
+.css-352{
+    width: 50%;
+}
+.css-209{
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    transition: .3s ease-out;
+}
+.css-211:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.css-210{
+    margin-bottom: 15px;
+}
+.css-211{
+ color: #b3b3b3;
+ text-decoration: none;
+}
+.link-css{
+    margin-top: 20px;
+}
+.css-349{
+    padding: 10px 15px 10px 0px;
+    font-size: 2rem;
+    color: #b3b3b3;
+}
+.f:hover{
+    color: #1f62f1;
+}
+.i:hover{
+    color: #f11f77;
+}
+.l:hover{
+    color: #1f93f1;
+}
+.y:hover{
+    color: #f11f2a;
+}
+.css-789{
+    padding: 20px 0px;
+    background-color: #131212;
+}
+.css-09{
+    text-align: center;
+    color: #f3eee7;
+}
