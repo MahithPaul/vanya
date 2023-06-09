@@ -9,20 +9,22 @@
 /* ==================Header part======================= */
 header{
     width: 100%;
-    background-color: #0c602b;
+    background-color: #0c602b !important;
     color: #fff;
+    height: 133.8px;
+    z-index: 9;
 }
 .globalStickyHeader{
     position: fixed;
     top: 0;
     z-index: 9;
     width: 100%;
+    backdrop-filter: blur(4px);
 }
 .css-123{
     display: block;
     padding: 0 0.5rem 0 0.5rem;
     margin: 0px 170px;
-    background-color: #0c602b;
 }
 .head-css{
     display: flex;
@@ -46,7 +48,7 @@ header{
     align-items: center;
 }
 .b-t{
-    background-color: rgba(12, 96, 43, 0.596);
+    background-color: rgba(12, 96, 43, 0.774);
     border-top: 1.5px solid #949494;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -81,4 +83,58 @@ header{
 .b-button:hover{
     background-color: #000;
     transform: scale(1.062);
+}
+/* ====================END HEAD=========================== */
+.css-ser-bg{
+    height: 364px;
+    background-image: url("../img/service-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.selection{
+    padding: 20px 10px;
+    background-color: #e9f1fa;
+}
+.css-exp{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.9rem;
+    font-weight: 200;
+}
+.css-flex{
+    padding: 25px 30px;
+}
+.css-cottage{
+    margin-top: 40px;
+    width: 100%;
+    height: 550px;
+}
+.css-h1{
+    padding-left: 30px;
+    border-left: 5px solid #0c602b;
+    text-transform: capitalize;
+    font-size: 2.1rem;
+}
+.css-388{
+    background-color: #f8f8f8;
+    height: 450px;
+    border: .5px solid #979797;
+    margin: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.css-001{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px;
+    padding: 0px 30px;
+    gap: 70px;
+}
+.css-001 p{
+    font-size: 1.6rem;
+}
+.css-m{
+    width: 36%;
 }

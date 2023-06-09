@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Select a Date Range</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var dateFormat = "dd/mm/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          dateFormat: "dd/mm/yy",
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+          calculateNights();
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        dateFormat: "dd/mm/yy",
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+        calculateNights();
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+   
+    function calculateNights() {
+      var checkIn = from.datepicker("getDate");
+      var checkOut = to.datepicker("getDate");
+
+      if (checkIn && checkOut) {
+        var timeDiff = checkOut.getTime() - checkIn.getTime();
+        var numNights = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+        $("#numNights").text(numNights);
+      } else {
+        $("#numNights").text("");
+      }
+    }
+   
+  } );
+  </script>
+  <style>
+    /* Custom styling for datepicker */
+    .ui-datepicker {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .ui-datepicker-header {
+      background-color: #f2f2f2;
+      border: none;
+      padding: 10px;
+      text-align: center;
+    }
+    .ui-datepicker-title {
+      font-weight: bold;
+      color: #333;
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      background-color: #f2f2f2;
+      border: none;
+      font-size: 16px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    .ui-datepicker-prev:hover,
+    .ui-datepicker-next:hover {
+      background-color: #ddd;
+    }
+    .ui-datepicker-calendar {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    .ui-datepicker-calendar td {
+      padding: 5px;
+    }
+    .ui-datepicker-calendar .ui-state-default {
+      cursor: pointer;
+    }
+    .ui-datepicker-calendar .ui-state-highlight {
+      background-color: #ffd700;
+    }
+    .ui-datepicker-calendar .ui-state-active {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+ 
+<label for="from">From</label>
+<input type="text" id="from" name="from">
+<label for="to">to</label>
+<input type="text" id="to" name="to">
+
+<p>Number of Nights: <span id="numNights"></span></p>
+ 
+</body>
+</html>

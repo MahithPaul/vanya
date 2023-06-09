@@ -1,176 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Sign Up Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
-
-    h2 {
-      color: #333;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      color: #555;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="password"],
-    button,
-    input[type="checkbox"] {
-      width: 100%;
-      padding: 8px;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-sizing: border-box;
-      margin-bottom: 12px;
-    }
-
-    input[type="checkbox"] {
-      width: auto;
-      margin-bottom: 12px;
-    }
-
-    button {
-      background-color: #0080ff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      padding: 10px;
-    }
-
-    .error {
-      color: red;
-      margin-top: 10px;
-    }
-
-    .success {
-      color: green;
-      margin-top: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="public/theme/css/t-datepicker.min.css">
+  <link rel="stylesheet" href="public/theme/css/theme/t-datepicker-main.css"> -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
+
 <body>
-  <form id="signupForm">
-    <h2>Sign Up</h2>
-    <div>
-      <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required>
+  <div class="t-datepicker">
+    <div class="t-check-in">
+      <div class="t-dates t-date-check-in">
+        ➜<label class="t-date-info-title">Check In</label>
+      </div>
+      <input type="hidden" class="t-input-check-in" value="null" name="start">
+      <div class="t-datepicker-day">
+        <table class="t-table-condensed">
+          <!-- Date theme calendar -->
+        </table>
+      </div>
     </div>
-    <div>
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required>
+    <div class="t-check-out">
+      <div class="t-dates t-date-check-out">
+        ➜<label class="t-date-info-title">Check Out</label>
+      </div>
+      <input type="hidden" class="t-input-check-out" value="null" name="end">
     </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="phoneNumber">Phone Number:</label>
-      <input type="tel" id="phoneNumber" name="phoneNumber" minlength="10" required>
-    </div>
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" minlength="8" required>
-    </div>
-    <div>
-      <label for="confirmPassword">Confirm Password:</label>
-      <input type="password" id="confirmPassword" name="confirmPassword" required>
-    </div>
-    <div>
-      <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
-      <label for="termsAgreement">I agree to the terms and conditions</label>
-    </div>
-    <div>
-      <button type="submit">Sign Up</button>
-    </div>
-    <div id="errorMessages" class="error"></div>
-    <div id="successMessage" class="success"></div>
-  </form>
-
-  <script>
-    document.getElementById("signupForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      
-      var firstName = document.getElementById("firstName").value;
-      var lastName = document.getElementById("lastName").value;
-      var email = document.getElementById("email").value;
-      var phoneNumber = document.getElementById("phoneNumber").value;
-      var password = document.getElementById("password").value;
-      var confirmPassword = document.getElementById("confirmPassword").value;
-      var termsAgreement = document.getElementById("termsAgreement").checked;
-
-      var errorMessages = [];
-
-      // Validate email
-      if (!validateEmail(email)) {
-        errorMessages.push("Please enter a valid email address");
-      }
-
-      // Validate password
-      if (!validatePassword(password)) {
-        errorMessages.push("Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character");
-      }
-
-      // Validate confirm password
-      if (password !== confirmPassword) {
-        errorMessages.push("Passwords do not match");
-      }
-
-      // Validate phone number length
-      if (phoneNumber.length !== 10) {
-        errorMessages.push("Phone number must be 10 digits long");
-      }
-
-      // Validate terms agreement
-      if (!termsAgreement) {
-        errorMessages.push("Please agree to the terms and conditions");
-      }
-
-      if (errorMessages.length === 0) {
-        // Clear error messages
-        document.getElementById("errorMessages").innerHTML = "";
-
-        // Display success message
-        document.getElementById("successMessage").innerHTML = "Sign up successful! Check your email to verify your email address.";
-        
-        // You can perform additional actions here, such as submitting the form to a server
-      } else {
-        // Display error messages
-        document.getElementById("successMessage").innerHTML = "";
-        document.getElementById("errorMessages").innerHTML = errorMessages.join("<br>");
-      }
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.t-datepicker').tDatePicker({});
     });
-
-    function validateEmail(email) {
-      var emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/;
-      return emailPattern.test(email);
-    }
-
-    function validatePassword(password) {
-      // Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character
-      var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-      return passwordPattern.test(password);
-    }
   </script>
+  <script src="your-part/jquery.min.js"></script>
+  <script src="https://public/theme/js/t-datepicker.min.js"></script>
 </body>
+
 </html>

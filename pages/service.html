@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Vanya Hill Resort</title>
+    <link rel="shortcut icon" href="../assets/img/Fav Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/service.css">
+</head>
+
+<body>
+    <header>
+        <div class="css-123">
+            <div class="head-css">
+                <a href="index.html">
+                    <img src="../assets/img/VANYA LOGO PNG.png" alt="Logo" width="170px" height="60px">
+                </a>
+                <div class="css-122">
+                    <a href="pages/signUp.html" target="_blank" class="s-button">Sign in or Join</a>
+                </div>
+            </div>
+        </div>
+        <div class="b-t">
+            <div class="css-123">
+                <div class="css-124">
+                    <nav>
+                        <ul class="css-223">
+                            <li class="css-list"><a href="../index.html" class="list-a">Home</a></li>
+                            <li class="css-list"><a href="./service.html" class="list-a">Services</a></li>
+                            <li class="css-list"><a href="#" class="list-a">Packages</a></li>
+                            <li class="css-list"><a href="#" class="list-a">blog</a></li>
+                            <li class="css-list"><a href="#" class="list-a">About</a></li>
+                            <li class="css-list"><a href="#" class="list-a">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="b-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="css-ser-bg">
+    </div>
+    <section class="selection">
+        <div class="css-exp">
+            <p>EXPLORE MORE WITH VANYA HILL RESORT</p>
+        </div>
+        <div class="css-flex">
+            <div class="css-cottage">
+                <h1 class="css-h1">mini cottage</h1>
+                <div class="css-388">
+                    <img src="../assets/img/mini.jpeg" alt="image" width="448px" height="448px" >
+                    <div class="css-001">
+                        <p>Experience cozy comfort in our charming Mini Cottages. These cottages are perfect for a small retreat, featuring a comfortable bedroom, a private bathroom, and a mini kitchenette. Enjoy the serene surroundings and unwind in your own little haven.</p>
+                        <a href="#" class="b-button css-m">Explore Mini Cottage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="css-cottage">
+                <h1 class="css-h1">Deluxe Cottage</h1>
+                <div class="css-388">
+                    <img src="../assets/img/Deluxe.jpeg" alt="image" width="448px" height="448px" >
+                    <div class="css-001">
+                        <p>Indulge in luxury and relaxation in our Deluxe Cottages. These spacious cottages offer elegant interiors, a plush bedroom, a modern en-suite bathroom, a living area, and a private balcony with stunning views. Immerse yourself in tranquility and enjoy a truly rejuvenating stay.</p>
+                        <a href="#" class="b-button css-m">Explore Deluxe Cottage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="css-cottage">
+                <h1 class="css-h1">Royal Cottage</h1>
+                <div class="css-388">
+                    <img src="../assets/img/royal.jpeg" alt="image" width="448px" height="448px" >
+                    <div class="css-001">
+                        <p>Experience the epitome of luxury and grandeur in our Royal Cottages. These opulent retreats feature lavish interiors, a king-sized bedroom, a luxurious en-suite bathroom with a Jacuzzi, a private garden, and a dedicated personal staff to cater to your every need. Indulge in a regal experience like no other.</p>
+                        <a href="#" class="b-button css-m">Explore Royal Cottage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="css-cottage">
+                <h1 class="css-h1">Suite Cottage</h1>
+                <div class="css-388">
+                    <img src="../assets/img/suit.jpeg" alt="image" width="448px" height="448px" >
+                    <div class="css-001">
+                        <p>Step into a world of sophistication and elegance in our exquisite Suites. These spacious accommodations boast a separate living area, a luxurious bedroom, a lavish en-suite bathroom, and a private balcony offering breathtaking views. Pamper yourself with the finest amenities and impeccable service.</p>
+                        <a href="#" class="b-button css-m">Explore Suite Cottage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var className = "globalStickyHeader";
+        var scrollTrigger = 80;
+
+        window.onscroll = function () {
+            // We add pageYOffset for compatibility with IE.
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByClassName("b-t")[0].classList.add(className);
+            } else {
+                document.getElementsByClassName("b-t")[0].classList.remove(className);
+            }
+        };
+
+    </script>
+</body>
+</html>
