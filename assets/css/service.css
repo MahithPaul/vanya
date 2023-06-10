@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Caudex', serif !important;
-    scroll-behavior: smooth;
-}
-/* ==================Header part======================= */
+/* ==================Header part=======================
 header{
     width: 100%;
     background-color: #0c602b !important;
@@ -82,7 +74,7 @@ header{
 .b-button:hover{
     background-color: #000;
     transform: scale(1.062);
-}
+} */
 /* ====================END HEAD=========================== */
 .css-ser-bg{
     height: 364px;
@@ -146,7 +138,7 @@ header{
     gap: 80px;
     justify-content: center;
 }
-/* =========================FOOTER============================ */
+/* =========================FOOTER============================
 footer{
     background-color: #131212;
 }
@@ -230,4 +222,4 @@ footer{
 .css-09{
     text-align: center;
     color: #f3eee7;
-}
+} */
